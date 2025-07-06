@@ -9,7 +9,7 @@ public class Solution {
                 currentNumber++;
                 System.out.print(currentNumber + " ");
             }
-            System.out.println("");
+            System.out.println();
         }
     }
     public static void main(String[] args) {

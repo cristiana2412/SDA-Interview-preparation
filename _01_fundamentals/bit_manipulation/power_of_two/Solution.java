@@ -9,7 +9,7 @@ public class Solution {
         return true;
     }
 
-    public static boolean isPowerOfTwoBit(int n) {
+    public static boolean isPowerOfTwoBitManipulation(int n) {
         return (n>0) && ((n & (n-1))==0);
     }
 
@@ -38,6 +38,7 @@ public class Solution {
         // System.out.println(isPowerOfTwo(48));
         // System.out.println(isPowerOfTwoBit(16));
         // System.out.println(isPowerOfTwoBit(48));
+        System.out.println(isPowerOfTwoBitManipulation(8192));
         System.out.println(bitCountByModulo2(45));
         System.out.println(Integer.toBinaryString(45));
         System.out.println(bitCountByModulo2(89));

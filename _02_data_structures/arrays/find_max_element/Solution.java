@@ -12,6 +12,9 @@ public class Solution {
     public static void main(String[] args) {
         int[] numbers = {4, 7, 2, 32, 6, 1};
         System.out.println(findMax(numbers));
+
+        int[] numbers2 = {2, 8, 22, 5, 55, 999, 1};
+        System.out.println(findMax(numbers2));
     }
 
 }
