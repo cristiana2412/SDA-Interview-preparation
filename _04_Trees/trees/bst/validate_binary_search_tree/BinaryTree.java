@@ -1,4 +1,4 @@
-package _02_data_structures.trees.bst.validate_binary_search_tree;
+package _04_Trees.trees.bst.validate_binary_search_tree;
 
 class Node {
     int data;

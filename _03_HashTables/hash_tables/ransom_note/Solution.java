@@ -1,4 +1,4 @@
-package _02_data_structures.hash_tables.ransom_note;
+package _03_HashTables.hash_tables.ransom_note;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package _02_data_structures.linked_list.reverse_a_linked_list;
+package _02_data_structures.linked_list;
 
 public class LinkedList {
     public class Node {
@@ -18,24 +18,24 @@ public class LinkedList {
         if (head == null) {
             head = newNode;
         } else {
-            Node currentNode = head;
             // Else traverse till the last node 
-            // and insert the new_node there 
+            // and insert the newNode there 
+            Node currentNode = head;
             while (currentNode.next != null) {
                 currentNode = currentNode.next;
             }
-            // Insert the new_node at last node 
+            // Insert the newNode at last node 
             currentNode.next = newNode; 
         }
     }
 
     public void display() {
-        Node currNode = head;
-        while (currNode.next != null) {
-            System.out.print(currNode.data + " -> ");
-            currNode = currNode.next;
+        Node currentNode = head;
+        while (currentNode.next != null) {
+            System.out.print(currentNode.data + " -> ");
+            currentNode = currentNode.next;
         }
-        System.out.println(currNode.data);
+        System.out.println(currentNode.data);
     }
 
     public void createCycle(int pos) {
@@ -43,17 +43,18 @@ public class LinkedList {
         Node cycleNode = null;
         Node currNode = head;
 
-        int index = 0;
+        int index = 1;
         while (currNode.next != null) {
             if (index == pos) {
                 cycleNode = currNode;
             }
 
             currNode = currNode.next;
-            
-            if (cycleNode != null) {
-                currNode.next = currNode;
-            }
+            index++;
+        }
+
+        if (cycleNode != null) {
+            currNode.next = currNode;
         }
     }
 

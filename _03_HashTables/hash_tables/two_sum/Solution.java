@@ -1,4 +1,4 @@
-package _02_data_structures.hash_tables.two_sum;
+package _03_HashTables.hash_tables.two_sum;
 
 import java.util.HashMap;
 import java.util.Map;

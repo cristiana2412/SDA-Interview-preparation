@@ -1,6 +1,6 @@
 package _02_data_structures.linked_list.detect_cycle_in_a_list;
 
-import _02_data_structures.linked_list.reverse_a_linked_list.LinkedList;
+import _02_data_structures.linked_list.LinkedList;
 
 public class Solution {
     public static boolean hasCyle(LinkedList list) {

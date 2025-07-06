@@ -1,5 +1,5 @@
-package _02_data_structures.trees.heap.kth_largest_element;
-import _02_data_structures.trees.heap.max_heap_construction.MaxHeap;
+package _04_Trees.trees.heap.kth_largest_element;
+import _04_Trees.trees.heap.max_heap_construction.MaxHeap;
 
 public class Solution {
 

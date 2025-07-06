@@ -1,4 +1,4 @@
-package _02_data_structures.trees.heap.max_heap_construction;
+package _04_Trees.trees.heap.max_heap_construction;
 
 public class MaxHeap {
     int[] heap;
