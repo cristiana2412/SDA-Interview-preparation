@@ -1,4 +1,4 @@
-package _04_Trees.trees.bst.validate_binary_search_tree;
+package _04_Trees.trees.bst;
 
 class Node {
     int data;
@@ -14,6 +14,7 @@ class Node {
 
 public class BinaryTree {
     Node root;
+
     static void preorder(Node root) {
         if (root != null) {
             System.out.print(root.data + " ");
@@ -45,6 +46,8 @@ public class BinaryTree {
         binaryTree.root.right = new Node(3);
         binaryTree.root.left.left = new Node(4);
         binaryTree.root.left.right = new Node(5);
+        binaryTree.root.right.left = new Node(6);
+        binaryTree.root.right.right = new Node(7);
 
         System.out.println("---------------");
         System.out.println("PreOrder");

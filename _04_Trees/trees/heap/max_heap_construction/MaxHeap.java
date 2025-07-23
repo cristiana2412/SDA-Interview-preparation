@@ -10,7 +10,7 @@ public class MaxHeap {
     }
 
     public void siftUp(int index) {
-        // cat timp copilul (heap[index]) este mai mare decat parintele (heap[index-1]/2)
+        // as long as the child (heap[index]) is bigger than the parent (heap[index-1]/2)
         while(index > 0 && (heap[index] > heap[index-1]/2)) {
             int parentIndex = (index-1)/2;
             int tmp = heap[index];
@@ -22,7 +22,7 @@ public class MaxHeap {
     }
 
     public void siftDown(int index) {
-        // trebuie sa compar largest (parintele) cu stanga si cu dreapta pana cand copii lui sunt mai mici ambii si parintele lor este mai mare
+        // we need to compare largest (the parent) with left and right until all his children are smaller and the parent is the biggest
         while (2 * index + 1 < size) {
             int leftChild = 2 * index + 1;
             int rightChild = 2 * index + 2;
@@ -74,20 +74,23 @@ public class MaxHeap {
     public static void main(String[] args) {
         MaxHeap maxHeap = new MaxHeap(100);
 
-        int[] values = {100, 90, 85, 80, 75, 70, 65,
-                        60, 55, 50, 45, 40, 35, 30,
-                        25, 20, 15, 10};
+        int[] values = {
+            100, 90, 85, 80, 75, 70, 65,
+            60, 55, 50, 45, 40, 35, 30, 25,
+            20, 15, 10
+        };
 
         for (int val : values) {
             maxHeap.insert(val);
         }
 
-        maxHeap.insert(92);
-
         // for (int i = 0; i < maxHeap.size; i++) {
         //     System.out.print(maxHeap.heap[i] + " ");
         // }
+        // System.out.println();
+
         maxHeap.insert(92);
+
         for (int i = 0; i < maxHeap.size; i++) {
             System.out.print(maxHeap.heap[i] + " ");
         }

@@ -67,6 +67,7 @@ public class LinkedList {
         list.add(2);
         list.add(3);
         list.createCycle(4);
+        
         list.display();
     }
 }

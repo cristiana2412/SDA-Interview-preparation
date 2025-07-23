@@ -1,4 +1,4 @@
-package _02_data_structures.arrays.sliding_window;
+package _02_data_structures.arrays.sliding_window.max_sum_of_k_elements;
 
 public class Solution {
     public static int maxSumOfKElements(int[] numbers, int k) {

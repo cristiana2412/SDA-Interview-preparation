@@ -1,3 +1,5 @@
+package _01_fundamentals.swap_two_elements;
+
 public class Solution {
     public static void swapTwoElements(int a, int b) {
         System.out.println("a = "  + a + " b = " + b);

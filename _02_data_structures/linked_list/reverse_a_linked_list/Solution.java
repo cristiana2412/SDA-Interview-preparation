@@ -15,6 +15,7 @@ public class Solution {
         }
         return prevNode;
     }
+
     public static void main(String[] args) {
         LinkedList list = new LinkedList();
         list.add(7);
@@ -23,11 +24,12 @@ public class Solution {
         list.add(1);
         list.add(2);
         list.add(3);
-        // LinkedList.Node node = reverseLinkedList(list);
-        // LinkedList list2 = new LinkedList();
-        // list2.add(node);
 
         list.display();
+
+        LinkedList reversedLinkedList = new LinkedList();
+        reversedLinkedList.head = reverseLinkedList(list);
+        reversedLinkedList.display();
     }
 
 }

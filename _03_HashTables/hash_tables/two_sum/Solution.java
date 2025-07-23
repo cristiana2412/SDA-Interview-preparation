@@ -20,6 +20,7 @@ public class Solution {
         return new int[] {-1, -1};
     }
     public static void main(String[] args) {
-        
+        int[] twoIndices = twoSum(new int[]{2,7,11,15}, 9);
+        System.out.println("[" + twoIndices[0] + "," + twoIndices[1] + "]");
     }
 }

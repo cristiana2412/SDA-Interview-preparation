@@ -3,7 +3,7 @@ package _02_data_structures.linked_list.detect_cycle_in_a_list;
 import _02_data_structures.linked_list.LinkedList;
 
 public class Solution {
-    public static boolean hasCyle(LinkedList list) {
+    public static boolean hasCycle(LinkedList list) {
         if (list.head == null || list.head.next == null) {
             return false;
         }
@@ -35,6 +35,23 @@ public class Solution {
         list.add(6);
         list.display();
 
-        System.out.println(hasCyle(list));
+        System.out.println(hasCycle(list));
+
+        LinkedList list2 = new LinkedList();
+        list2.add(7);
+        list2.add(8);
+        list2.add(9);
+        list2.add(1);
+        list2.add(2);
+        list2.add(3);
+        list2.add(4);
+        list2.add(5);
+        list2.add(6);
+
+        list2.createCycle(4);
+
+        // list2.display();
+
+        System.out.println(hasCycle(list2));
     }
 }
