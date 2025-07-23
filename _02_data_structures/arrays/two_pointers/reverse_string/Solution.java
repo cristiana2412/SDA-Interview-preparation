@@ -1,3 +1,5 @@
+package _02_data_structures.arrays.two_pointers.reverse_string;
+
 import java.util.Arrays;
 
 public class Solution {

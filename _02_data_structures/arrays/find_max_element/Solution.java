@@ -1,3 +1,5 @@
+package _02_data_structures.arrays.find_max_element;
+
 public class Solution {
     public static int findMax(int[] numbers) {
         int max = numbers[0];

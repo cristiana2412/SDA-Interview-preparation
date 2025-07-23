@@ -1,3 +1,5 @@
+package _02_data_structures.arrays.two_pointers.valid_palindrome;
+
 public class Solution {
     public static boolean isPalindrome(char[] s) {
         int i = 0;
